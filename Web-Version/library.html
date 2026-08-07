@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Library Manager</title>
+
+    <link rel="stylesheet" href="library.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Mini Library Manager</h1>
+        <p>Manage your books easily</p>
+    </header>
+
+
+    <main>
+
+        <section class="card">
+
+            <h2>Add New Book</h2>
+
+            <input type="number" id="bookId" placeholder="Book ID">
+            <input type="text" id="title" placeholder="Book Title">
+            <input type="text" id="author" placeholder="Author">
+
+            <button onclick="addBook()">Add Book</button>
+
+        </section>
+
+
+
+        <section class="card">
+
+            <h2>Search Book</h2>
+
+            <input type="text" id="searchInput" placeholder="Enter book title">
+
+            <button onclick="searchBook()">Search</button>
+
+            <p id="searchResult"></p>
+
+        </section>
+
+
+
+        <section class="card">
+
+            <h2>Library Actions</h2>
+
+            <input type="number" id="actionId" placeholder="Enter Book ID">
+
+            <button onclick="borrowBook()">Borrow</button>
+
+            <button onclick="returnBook()">Return</button>
+
+        </section>
+
+
+
+        <section class="card">
+
+            <h2>Books</h2>
+
+            <button onclick="displayAvailableBooks()">
+                Available Books
+            </button>
+
+            <button onclick="displayBorrowedBooks()">
+                Borrowed Books
+            </button>
+
+            <button onclick="countBooks()">
+                Total Books
+            </button>
+
+
+            <div id="bookDisplay"></div>
+
+        </section>
+
+
+    </main>
+
+
+<script src="library.js"></script>
+
+</body>
+                                     </html>
